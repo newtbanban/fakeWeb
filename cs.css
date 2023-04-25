@@ -1,29 +1,42 @@
 body {
-    background-color: #f5f5f5;
+    background-color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Uber Logo圖片 */
+.whole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
 .topPic {
-    display: block;
-    margin: 0 auto;
-    width: 120px;
-    height: 40px;
-    margin-top: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:65px;
+    background-image: url("https://images.unsplash.com/photo-1524181273563-3a1c4fa5b31f");
+    background-position: center;
+    background-size: cover;
+    /*z-index: -1;*/
 }
 
-/* 直接登入框 */
-.diretly-login {
+.login {
+    width: 500px;
+    min-height: 300px;
+    margin-top: 50px;
+    padding: 30px;
     background-color: white;
-    border: 1px solid #d6d6d6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0,0,0,.05), 0 0 0 1px rgba(0,0,0,.03);
-    margin: 50px auto;
-    padding: 25px;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* 標題文字 */
 .title {
     font-size: 24px;
     font-weight: bold;
@@ -57,10 +70,10 @@ body {
 
 /* 繼續按鈕 */
 .continue {
-    background-color: #008fb4;
+    background-color: darkgray;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: bold;
     height: 50px;
@@ -71,10 +84,10 @@ body {
 
 /* Google登入按鈕 */
 .google-login {
-    background-color: #4285f4;
+    background-color: darkgray;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: bold;
     height: 50px;
@@ -85,10 +98,10 @@ body {
 
 /* Apple登入按鈕 */
 .apple-login {
-    background-color: #000000;
+    background-color: darkgray;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: bold;
     height: 50px;
@@ -99,10 +112,10 @@ body {
 
 /* Facebook登入按鈕 */
 .facebook-login {
-    background-color: #3b5998;
+    background-color:darkgray;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: bold;
     height: 50px;
@@ -113,8 +126,8 @@ body {
 
 /* 鏈結 */
 .link {
-    color: white;
+    color: black;
     text-decoration: none;
-    color: white;
+    color:black;
     text-decoration: none;
 }
